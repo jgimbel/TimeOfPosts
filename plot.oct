@@ -1,0 +1,8 @@
+#! /usr/bin/octave -qf
+
+data = dlmread("/home/joel/part.csv", "\t");
+x = data(:,1);
+y = data(:,2);
+plot(x,y);
+print("plot.png", "-dpng");
+input("press enter to close");
